@@ -1,0 +1,26 @@
+<div class="col s6">
+   <h3>Enter a new company:</h3>
+   <form action="/companies" method="post">
+      <label for="name">Company Name: </label>
+      <input class="form-control" type="text" name="name" id="name">
+      <label for="phone">Phone Number: </label>
+      <input class="form-control" type="text" name="phone" id="phone">
+      <label for="email">Email: </label>
+      <input class="form-control" type="text" name="email" id="email">
+      <label for="note">Note: </label>
+      <input class="form-control" type="text" name="note" id="note">
+      <button type="submit">Add Company</button>
+   </form>
+   <div class="card">
+      <% if @companies.any? %>
+      <% @companies.each do |company| %>
+      <ul>
+         <li><a href="/companies/<%= company.id %>"><%= company.name %></a></li>
+      </ul>
+      <% end %>
+      <% else %>
+      <p>Please add company</p>
+      <% end %>
+   </div>
+</div>
+</div>

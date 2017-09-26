@@ -1,0 +1,138 @@
+<div id="wrapz" class="welcome">
+  <span id="splash-overlay" class="splash"></span>
+  <span id="welcome" class="z-depth-4"></span>
+  <header class="navbar-fixed">
+    <nav class="row deep-purple darken-3">
+      <div class="col s4">
+        <ul class="left">
+          <li >
+          <li>
+            <a href="/" class="brand-logo">Rapport</a>
+          </li>
+        </ul>
+      </div>
+      <!---end div-->
+      <div class="col s8">
+        <ul class="right">
+          <li class="right">
+            <a href="/signup" class="waves-effect waves-light">Sign up<span class="icon-text"></span>
+            </a>
+          </li>
+          <li class="right">
+            <a href="/login" class="waves-effect waves-light">Login<span class="icon-text"></span>
+            </a>
+          </li>
+          <li class="right">
+            <a href="/about" class="waves-effect waves-light">About Us<span class="icon-text"></span>
+            </a>
+          </li>
+          <li class="right">
+            <a href="/contact" class=" waves-effect waves-light">Contact Us<span class="icon-text"></span>
+            </a>
+          </li>
+          <li class="right">
+            <a href="/support" class="waves-effect waves-light">Solutions<span class="icon-text"></span>
+            </a>
+          </li>
+          <li class="right">
+            <a href="/features" class="waves-effect waves-light">Features<span class="icon-text"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+<div class="row" id="formy">
+  <div class="col s12">
+    <div class="form-container">
+      <div class="card">
+        <div class="card-content black-text">
+          <span class="card-title center"><strong>Sign Up</strong></span>
+
+          <div class="row">
+            <form id="form" class="col s12" action="/signup" method="post">
+              <div class="field-set">
+
+                <!--   user name -->
+                <span class="input-item">
+                  <i class="fa fa-user-circle"></i>
+                </span>
+                <!--   user name Input-->
+                <input class="form-input" name="username" id="username" type="text" placeholder="@UserName" required>
+
+                <br>
+
+                <!--   Password -->
+
+                <span class="input-item">
+                  <i class="fa fa-key"></i>
+                </span>
+                <!--   Password Input-->
+                <input class="form-input" type="password" placeholder="Password" id="password" name="password" required>
+
+                <!--      Show/hide password  -->
+                <span>
+                  <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
+                </span>
+
+                <!--   other buttons -->
+                <div class="other">
+
+                  <!--     Sign Up button -->
+                  <button class="btn submits sign-up">Sign Up
+                    <!--         Sign Up font icon -->
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  </button>
+                  <!--      End Other the Division -->
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer deep-purple darken-3">
+  <div class="footer-copyright deep-purple darken-4">
+    <div class="container">
+      <time datetime="{{ site.time | date: '%Y' }}">&copy; 2017 Copyright created by betty,philip and victor Nerdites Team</time>
+    </div>
+  </div>
+</footer>
+
+<style>
+#formy {
+  background-image: url(https://wallpaperscraft.com/image/abstract_black_blue_smoke_441_3840x2160.jpg);
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
+  .image {
+    padding-top: 50px;
+  }
+  .form-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  #form {
+    width: 600px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    /*box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);*/
+    padding: 2%;
+  }
+
+</style>

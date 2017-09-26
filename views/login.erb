@@ -1,0 +1,153 @@
+<div id="wrapz" class="welcome">
+	<span id="splash-overlay" class="splash"></span>
+	<span id="welcome" class="z-depth-4"></span>
+	<header class="navbar-fixed">
+		<nav class="row deep-purple darken-3">
+			<div class="col s4">
+				<ul class="left">
+					<li >
+					<li>
+						<a href="/" class="brand-logo">Rapport</a>
+					</li>
+				</ul>
+			</div>
+			<!---end div-->
+			<div class="col s8">
+				<ul class="right">
+					<li class="right">
+						<a href="/signup" class="waves-effect waves-light">Sign up<span class="icon-text"></span>
+						</a>
+					</li>
+					<li class="right">
+						<a href="/login" class="waves-effect waves-light">Login<span class="icon-text"></span>
+						</a>
+					</li>
+					<li class="right">
+						<a href="/about" class="waves-effect waves-light">About Us<span class="icon-text"></span>
+						</a>
+					</li>
+					<li class="right">
+						<a href="/contact" class=" waves-effect waves-light">Contact Us<span class="icon-text"></span>
+						</a>
+					</li>
+					<li class="right">
+						<a href="/support" class="waves-effect waves-light">Solutions<span class="icon-text"></span>
+						</a>
+					</li>
+					<li class="right">
+						<a href="/features" class="waves-effect waves-light">Features<span class="icon-text"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+</div>
+<!--Form Area  and container-->
+<div id="login" class="row">
+	<div class="col s12" id="asd">
+		<div class="form-container">
+			<div class="card">
+				<div class="card-content black-text">
+					<span class="card-title center"><strong>Log In</strong></span>
+					<div class="row">
+						<form id="form" class="col s12" action="/dashboard" method="post">
+							<div class="field-set">
+								<!--   user name -->
+								<span class="input-item">
+									<i class="fa fa-user-circle"></i>
+								</span>
+								<!--   user name Input-->
+								<input class="form-input" name="username" id="username" type="text" placeholder="@UserName" required>
+								<br>
+								<!--   Password -->
+								<span class="input-item">
+									<i class="fa fa-key"></i>
+								</span>
+								<!--   Password Input-->
+								<input class="form-input" type="password" placeholder="Password" id="pwd" name="password" required>
+								<!--      Show/hide password  -->
+								<span>
+									<i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
+								</span>
+								<br>
+								<!--        buttons -->
+								<!--      button LogIn -->
+								<button name="action" type="submit" class="btn waves-effect waves-light">
+									Log In
+								</button>
+							</div>
+							<br>
+							<!--   other buttons -->
+							<div class="other">
+								<!--      Forgot Password button-->
+								<button class="btn submits frgt-pass">Forgot Password</button>
+								<!--      End Other the Division -->
+							</div>
+							<!--   End Conrainer  -->
+							<!-- End Form -->
+						</form>
+					</div>
+				</div>
+				<!--end column-->
+			</div>
+		</div>
+	</div>
+	<!--End Form container -->
+
+		<!-- <div class="col s6">
+
+			<div class="row s6" id="tour-pic">
+				<img src="images/tour.jpeg" alt="img" style="max-width: 100%; height:auto;">
+			</div>
+			<div class="row s6" id="tour-pic">
+				<img src="images/boostsales1.jpg" alt="img" style="max-width: 100%; height:auto;">
+			</div>
+		</div> -->
+</div>
+
+<footer class="page-footer deep-purple darken-3">
+	<div class="footer-copyright deep-purple darken-4">
+		<div class="container">
+			<time datetime="{{ site.time | date: '%Y' }}">&copy; 2017 Copyright created by betty,philip and victor Nerdites Team</time>
+		</div>
+	</div>
+</footer>
+
+<style>
+	#login {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		background-image: url(https://wallpaperscraft.com/image/abstract_black_blue_smoke_441_3840x2160.jpg);
+	}
+
+	main {
+		flex: 1 0 auto;
+	}
+
+	.form-container {
+		padding-top: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#form {
+		width: 600px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    /*box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);*/
+    padding: 2%;
+	}
+	/*#tour-pic {
+		padding: 1px;
+		border: 1px solid #021a40;
+	}*/
+	/*#asd {
+		padding: 1px;
+		border: 1px solid #021a40;
+	}*/
+
+</style>

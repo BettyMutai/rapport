@@ -1,0 +1,26 @@
+
+
+<h4>Details of Company</h4>
+<p>Name: <%= @company.name %></p>
+<p>Phone: <%= @company.phone %></p>
+<p>Email: <%= @company.email %></p>
+<p>Note: <%= @company.note %></p>
+<h4>Update Company</h4>
+<form action="/companies/<%= @company.id %>" method="post">
+   <input class="form-control" type="hidden" name="_method" value="patch">
+   <label for="name">Company Name:</label>
+   <input class="form-control" type="text" name="name" id="name" value="<%= @company.name %>">
+   <label for="phone">Phone:</label>
+   <input class="form-control" type="text" name="phone" id="phone" value="<%= @company.phone %>">
+   <label for="email">Email:</label>
+   <input class="form-control" type="text" name="email" id="email" value="<%= @company.email %>">
+   <label for="note">Note:</label>
+   <input class="form-control" type="text" name="note" id="note" value="<%= @company.note %>">
+   <button type="submit">Update</button>
+</form>
+<br>
+<form action="/companies/<%= @company.id %>" method="post">
+   <input type="hidden" name="_method" value="delete">
+   <button type="submit">Delete</button>
+</form>
+

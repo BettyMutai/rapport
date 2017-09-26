@@ -1,0 +1,7 @@
+development:
+    adapter: postgresql
+    database: crm_development
+
+test:
+    adapter: postgresql
+    database: crm_test
